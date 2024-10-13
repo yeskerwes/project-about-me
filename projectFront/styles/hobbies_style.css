@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Kanit, sans-serif;
+    margin: 0;
+}
+
+header {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #c3cadb;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.burger_menu{
+    display: none;
+    width: 50px;
+    height: auto;
+}
+
+.header__nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-right ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #608AF5;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list.active {
+    background-color: #608AF5;
+    color: white;
+}
+
+.nav-list:hover {
+    background-color: #608AF5;
+    color: white;
+}
+
+.container {
+    background-image: url('/images/Background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.hobbies {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.hobbies__header {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hobbies__description {
+    text-align: center;
+    font-size: 20px; 
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.hobbies__section h2,
+.interests__section h2 {
+    text-align: center;
+    font-size: 30px; 
+    color: #608AF5;
+    margin-bottom: 30px;
+}
+
+.hobbies__section-list, 
+.interests__section-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hobbies__section-card {
+    position: relative; 
+    overflow: hidden; 
+    flex: 1;
+    background-color: #dee3f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 100px;
+}
+
+.hobbies__section-card:hover,
+.interests__section-card:hover{
+    transform: scale(1.05);
+}
+
+.hobbies__section-card-media {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+}
+
+.hobbies__section-card video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.hobbies__section-card:hover video {
+    opacity: 1; 
+}
+
+.hobbies__section-card-text {
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+}
+
+.hobbies__section-card:hover .hobbies__section-card-text {
+    opacity: 0; 
+}
+
+.hobbies__section-card h3,
+.interests__section-card h3 {
+    font-size: 24px; 
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hobbies__section-card p,
+.interests__section-card p {
+    font-size: 16px; 
+    color: #555;
+    line-height: 1.5;
+}
+
+.interests__section-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.interests__section-card {
+    flex: 1;
+    background-color: #dee3f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.style__span-text{
+    color: #608AF5;
+}
+
+footer {
+    background-color: #c3cadb; 
+    color: white; 
+    padding: 40px 0; 
+    font-family: Arial, sans-serif; 
+    max-width: 1500px;
+    margin: 0 auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer__links, 
+.footer__logo {
+    text-align: center; 
+}
+
+.footer__links ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer__links li {
+    margin: 5px 0; 
+}
+
+.footer__links h4,
+.footer__social h4{
+    color: #608AF5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-list {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-list:hover,
+.footer__social-icon:hover {
+    color: #608AF5; 
+}
+
+.footer__social,
+.footer__contact {
+    text-align: right; 
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 10px 0; 
+}
+
+.footer__social-icon {
+    margin-left: 10px; 
+    color: white; 
+    text-decoration: none; 
+}
+
+@media (max-width: 850px){
+    .header__nav{
+        display: flex;
+        justify-content: center;
+    }
+    .header__nav-left img{
+        display: none;
+    }
+
+    .footer{
+        max-width: 828px;
+        padding: 10px;
+    }   
+    .hobbies__section-card h3, .interests__section-card h3{
+        font-size: 16px;
+    }
+    .hobbies__section-card p, .interests__section-card p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 750px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__social, .footer__contact{
+        text-align: center;
+    }
+    .footer__social-icons{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 642px){
+    .header__nav-right {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    .header__nav-right{
+        display: none;
+    }
+
+    .header__nav-left img{
+        display: block;
+        justify-content: space-between;
+    }
+
+    .header__nav-left{
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+    }
+}
+
+@media (max-width: 400px){
+    .header__nav-left{
+        gap: 30px;
+    }
+
+    .hobbies__section-list, .interests__section-list{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+}

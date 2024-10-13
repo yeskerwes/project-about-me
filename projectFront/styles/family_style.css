@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+
+body {
+    font-family: Kanit, sans-serif;
+    margin: 0;
+}
+
+header {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0; 
+    background-color: #c3cadb; 
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.burger_menu{
+    display: none;
+    width: 50px;
+    height: auto;
+}
+
+.header__nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-right ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #608AF5;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list.active {
+    background-color: #608AF5;
+    color: white;
+}
+
+.nav-list:hover {
+    background-color: #608AF5;
+    color: white;
+}
+
+.container {
+    background-image: url('/images/Background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.style__span-text{
+    color: #608AF5;
+}
+
+.family__header-text{
+    text-align: center;
+    font-size: 32px;
+}
+
+.family__persons-in{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.family__persons-photo {
+    width: 250px;
+    height: 300px; 
+    background-color: #dee3f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.family__persons-photo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.family__persons-photo img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; 
+    border-radius: 20px;
+    padding: 20px;
+    transition: opacity 0.3s ease; 
+}
+
+.family__persons-photo:hover img {
+    opacity: 0.3; 
+}
+
+.family__description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    pointer-events: none;
+}
+
+.family__persons-photo:hover .family__description {
+    opacity: 1; 
+}
+
+.family__photo-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.family__photo-top img{
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+}  
+
+.family__photo-top-card{
+    background-color: #b7c3e4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.family__photo-bottom img{
+    width: 1140px;
+    height: 600px;
+    padding: 30px;
+}
+
+.family__photo-bottom-card{
+    background-color: #dee3f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.family__photo-bottom-card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.family__photo-bottom-card:hover img {
+    opacity: 0.3; 
+}
+
+.family__photo-bottom-card:hover .family__description {
+    opacity: 1; 
+}
+
+footer {
+    background-color: #c3cadb; 
+    color: #FFFFFF; 
+    padding: 40px 0; 
+    font-family: Arial, sans-serif; 
+    max-width: 1500px;
+    margin: 0 auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer__links, 
+.footer__logo {
+    text-align: center; 
+}
+
+.footer__links ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.footer__links li {
+    margin: 5px 0; 
+}
+
+.footer__links h4,
+.footer__social h4 {
+    color: #608AF5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-list {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-list:hover,
+.footer__social-icon:hover {
+    color: #608AF5; 
+}
+
+.footer__social,
+.footer__contact {
+    text-align: right; 
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 10px 0; 
+}
+
+.footer__social-icon {
+    margin-left: 10px; 
+    color: white; 
+    text-decoration: none; 
+}
+
+@media (max-width: 1200px){
+    .family__photo-top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .family__photo-top-card{
+        margin: 10px 0;
+    }
+
+    .family__photo-bottom{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .header__nav{
+        display: flex;
+        justify-content: center;
+    }
+    .header__nav-left img{
+        display: none;
+    }
+
+    .footer{
+        max-width: 828px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 750px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__social, .footer__contact{
+        text-align: center;
+    }
+    .footer__social-icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .achievements__list{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 642px){
+    .header__nav-right {
+        font-size: 10px;
+    }
+
+    .family__persons-photo{
+        height: auto;
+    }
+}
+
+@media (max-width: 550px){
+    .header__nav-right{
+        display: none;
+    }
+
+    .header__nav-left img{
+        display: block;
+        justify-content: space-between;
+    }
+
+    .header__nav-left{
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+    }
+
+    .family__photo-top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .family__photo-top img{
+        width: 260px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 400px){
+    .header__nav-left{
+        gap: 30px;
+    }
+}
